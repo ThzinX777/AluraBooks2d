@@ -21,8 +21,25 @@
     padding: 1em;
 }
 .lista-menu{
-    display:none;
+    display: none;
+    position: absolute;
+    top:100%;
+    width: 60vw;
 }
-.container-botao:checked~.lista-menu{/*o til utilizado como concatenador*/
-display: block;
+.container-botao:checked~.lista-menu{
+    display: block;
+}
+.lista-menu-titulo, .lista-menu-item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+.lista-menu-titulo{
+    color:var(--laranja);
+}
+.lista-menu-link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
